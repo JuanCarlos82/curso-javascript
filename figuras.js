@@ -55,6 +55,27 @@ function areaTriangulo (base, altura){
 const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
 console.log("El area del triangulo es: " + areaTriangulo + " cm2");
 */
+
+// triangulo isoseles
+function alturaTrianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeLadoBase) {
+    if (trianguloGrandeLadoA != trianguloGrandeLadoB) {
+        console.error("Los lados a y b no son iguales");
+    } else {
+        const trianguloPequenoLadoB = trianguloGrandeLadoBase / 2;
+        const trianguloPequenoLadoBase = trianguloGrandeLadoA;
+
+        const trianguloPequenoLadoBCuadrado = trianguloPequenoLadoB * trianguloPequenoLadoB;
+        const trianguloPequenoLadoBaseCuadrado = trianguloPequenoLadoBase * trianguloPequenoLadoBase;
+
+        const trianguloPequenoLadoA = Math.sqrt(trianguloPequenoLadoBaseCuadrado - trianguloPequenoLadoBCuadrado);
+
+        const trianguloGrandeAltura = trianguloPequenoLadoA;
+        return trianguloGrandeAltura;
+    }
+}
+
+
+
 console.groupEnd();
 
 // codigo del circulo
@@ -93,6 +114,7 @@ const areaCirculo = (radioCirculo * radioCirculo) * PI
 console.log("El area del cicrulo es: " + areaCirculo + " cm");
 */
 console.groupEnd();
+
 
 
 

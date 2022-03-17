@@ -8,7 +8,14 @@ curso practico de javascriot
 - tercer paso: crear funciones
 - cuarto paso: integrar javascript con html
 
-## taller n.2 Prcentajes y descuentros
+## taller n.2 Porcentajes y descuentros
+
+- primer paso: definir las formulas
+- segundo paso: implemtar las formulas en javascript
+- tercer paso: crear funciones
+- cuarto paso: integrar javascript con html
+
+## taller n.3 Promedio, mediana y modo
 
 - primer paso: definir las formulas
 - segundo paso: implemtar las formulas en javascript

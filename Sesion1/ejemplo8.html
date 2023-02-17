@@ -6,17 +6,17 @@
 <body>
     <h1>Ejemplo8</h1>
     <script>
-        let num = Number(prompt("Digite un numero : "));
-        let suma = 0;
-        for (x = (num-1); x>0; x--){
-            if(num%x==0){
-                suma += x;
+        let suma=0;
+        let num1 = Number(prompt("Digite el primer numero : "));
+        let num2 = Number(prompt("Digite el segundo numero : "));
+        while (num1>0){
+            if (num1%2!=0){
+                suma += num2;
             }
+            num1 = Math.trunc(num1/2);
+            num2 = num2*2;
         }
-        if (num == suma)
-            document.write("El numero es perfecto");
-        else
-            document.write("El numero NO es perfecto");
+            document.write("El producto es : " + suma);
     </script> 
 </body>
 </html>

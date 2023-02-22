@@ -31,6 +31,7 @@ function EsBisiesto(txt){
         p.textContent = "El año es NO BISIESTO";
     }
 }
+
 function MostrarOrdenados(){
     let p = document.getElementById("resultado");
     let n1 = Number(document.f1.n1.value);
@@ -62,6 +63,7 @@ function MostrarOrdenados(){
     mensaje = "El mayor es " + my + " " + "El central es " + cn + " " + "El menor es " + mn;
     p.textContent = mensaje;
 }
+
 function MostrarNombreDia(){
     let p = document.getElementById("resultado");
     let num = Number(document.f1.num.value);
@@ -93,6 +95,7 @@ function MostrarNombreDia(){
     }
     p.textContent = mensaje;
 }
+
 function MostrarTabla(){
     let num = Number(document.f1.num.value);
     let mensaje = "";
@@ -101,6 +104,7 @@ function MostrarTabla(){
     }
     alert(mensaje);
 }
+
 function EsPerfecto(){
     let num = Number(document.f1.num.value);
     let mensaje = "";
@@ -110,6 +114,7 @@ function EsPerfecto(){
     }
     alert((num==suma) ? "Es perfecto" : "No es perfecto");
 }
+
 function Rusa(){
     let num1 = Number(document.f1.num1.value);
     let num2 = Number(document.f1.num2.value);
@@ -123,6 +128,7 @@ function Rusa(){
     }
     alert("El producto es " + suma);
 }
+
 function EsPrimo(){
     let num = Number(document.f1.num.value);
     let esPrimo = true;
